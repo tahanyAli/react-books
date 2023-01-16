@@ -8,7 +8,7 @@ const BookEdit = ({ book, onSubmit }) => {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    onSubmit(book.id, title)
+    onSubmit(book.id, title);
   };
   return (
     <form onSubmit={handleSubmit} className="book-edit">
